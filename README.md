@@ -1,3 +1,8 @@
+# Big Shoes JP Version
+This version got adapted to the original JP release of Final Fantasy 7 on Emulator.
+This will not work with the JP International of FF7.
+This will not work properly with PC anymore due to the adjusted encounter tables and Japan never getting an early PC version.
+
 # Big Shoes
 
 Big Shoes is a standalone Final Fantasy 7 stepgraph viewer written in Python.
