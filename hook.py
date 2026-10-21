@@ -293,13 +293,15 @@ def manual_try_address(process_handle, addr: int):
 
 def find_base_address_candidates(b: bytes):
     i = 0
+    startadd = 0x0
+    
     while i < len(b):
         i = b.find(constants.RNG_BYTES, i)
         if i < 0:
             return
-        # print(sum(b[i - 0xD0638:i - 0xC0638]))
-        if sum(b[i - 0xD0638:i - 0xD0638 + 128]) == 9178:
-            yield i - 0xE0638
+        startadd = i - 0xDFD58
+        if (sum(b[i - 0xCFD58:i - 0xCFD58 + 128]) == 9241) and (startadd % 0x10000 == 0): #mod 0x10000 to get rid of savestates
+            yield startadd
         i += len(constants.RNG_BYTES)
 
 

@@ -31,7 +31,7 @@ class Settings:
         self.X_GRIDLINES_PER_TEXT = 2
         self.MIN_TOP_DANGER = 100
         self.MAX_TOP_DANGER = 65536
-        self.DEFAULT_TOP_DANGER = 6000
+        self.DEFAULT_TOP_DANGER = 12000
         self.Y_GRIDLINE_HEIGHT = 12
         self.SCROLL_STEPS = self.STEP_PER_GRIDLINE
         self.HOLD_SHIFT_SCROLL_MULTIPLIER = 10
