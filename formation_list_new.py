@@ -8,8 +8,8 @@ import hook
 
 
 class FormationListWindow:
-    ADDR_FIELDID = hook.Address(0x9A05C, 0x8C15D0, 16, "Field ID")
-    ADDR_SELTABLE = hook.Address(0x9AC30, 0x8C0DC4, 8, "Selected Table")
+    ADDR_FIELDID = hook.Address(0x987F4, 0x8C15D0, 16, "Field ID")
+    ADDR_SELTABLE = hook.Address(0x993C8, 0x8C0DC4, 8, "Selected Table")
 
     def main(self):
         while True:

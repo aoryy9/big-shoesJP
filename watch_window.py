@@ -8,17 +8,17 @@ import hook
 
 class WatchWindow:
     ADDRESSES = [
-        (hook.Address(0x9C540, 0x8C165C, 8, "Step ID"), str),
-        (hook.Address(0x9AD2C, 0x8C1660, 8, "Offset"), str),
-        (hook.Address(0x9C6D8, 0x8C1664, 8, "Step Fraction"), lambda x: str(x >> 5)),
-        (hook.Address(0x7173C, 0x8C1668, 16, "Danger"), str),
-        (hook.Address(0x71C20, 0x8C1650, 8, "Formation Accumulator"), str),
-        (hook.Address(0x9A05C, 0x8C15D0, 16, "Field ID"), str),
-        (hook.Address(0x9AC30, 0x8C0DC4, 8, "Selected Table"), str),
-        (hook.Address(0x9AC04, 0x8C0D98, 16, "Danger Divisor Multiplier"), str),
-        (hook.Address(0x62F19, 0x9BCAD9, 8, "Lure Rate"), str),
-        (hook.Address(0x62F1B, 0x9BCADB, 8, "Preempt Rate"), str),
-        (hook.Address(0x7E774, 0x8C1654, 16, "Last Encounter Formation"), str)
+        (hook.Address(0x9ACD8, 0x8C165C, 8, "Step ID"), str),
+        (hook.Address(0x994C4, 0x8C1660, 8, "Offset"), str),
+        (hook.Address(0x9AE70, 0x8C1664, 8, "Step Fraction"), lambda x: str(x >> 5)),
+        (hook.Address(0x706F4, 0x8C1668, 16, "Danger"), str),
+        (hook.Address(0x70BD8, 0x8C1650, 8, "Formation Accumulator"), str),
+        (hook.Address(0x987F4, 0x8C15D0, 16, "Field ID"), str),
+        (hook.Address(0x993C8, 0x8C0DC4, 8, "Selected Table"), str),
+        (hook.Address(0x9939C, 0x8C0D98, 16, "Danger Divisor Multiplier"), str),
+        (hook.Address(0x62CE1, 0x9BCAD9, 8, "Lure Rate"), str),
+        (hook.Address(0x62CE3, 0x9BCADB, 8, "Preempt Rate"), str),
+        (hook.Address(0x7CF0C, 0x8C1654, 16, "Last Encounter Formation"), str)
     ]
 
     def main(self):

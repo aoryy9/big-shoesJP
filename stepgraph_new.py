@@ -59,17 +59,17 @@ class SpecificStepDialog:
 
 
 class Stepgraph:
-    ADDR_STEPID = hook.Address(0x9C540, 0x8C165C, 8, "Step ID")
-    ADDR_OFFSET = hook.Address(0x9AD2C, 0x8C1660, 8, "Offset")
-    ADDR_FRAC = hook.Address(0x9C6D8, 0x8C1664, 8, "Step Fraction")
-    ADDR_DANGER = hook.Address(0x7173C, 0x8C1668, 16, "Danger")
-    ADDR_FMACCUM = hook.Address(0x71C20, 0x8C1650, 8, "Formation Accumulator")
-    ADDR_FIELDID = hook.Address(0x9A05C, 0x8C15D0, 16, "Field ID")
-    ADDR_SELTABLE = hook.Address(0x9AC30, 0x8C0DC4, 8, "Selected Table")
-    ADDR_DDM = hook.Address(0x9AC04, 0x8C0D98, 16, "Danger Divisor Multiplier")
-    ADDR_LURE = hook.Address(0x62F19, 0x9BCAD9, 8, "Lure Rate")
-    ADDR_PREEMPT = hook.Address(0x62F1B, 0x9BCADB, 8, "Preempt Rate")
-    ADDR_LASTENC = hook.Address(0x7E774, 0x8C1654, 16, "Last Encounter Formation")
+    ADDR_STEPID = hook.Address(0x9ACD8, 0x8C165C, 8, "Step ID")
+    ADDR_OFFSET = hook.Address(0x994C4, 0x8C1660, 8, "Offset")
+    ADDR_FRAC = hook.Address(0x9AE70, 0x8C1664, 8, "Step Fraction")
+    ADDR_DANGER = hook.Address(0x706F4, 0x8C1668, 16, "Danger")
+    ADDR_FMACCUM = hook.Address(0x70BD8, 0x8C1650, 8, "Formation Accumulator")
+    ADDR_FIELDID = hook.Address(0x987F4, 0x8C15D0, 16, "Field ID")
+    ADDR_SELTABLE = hook.Address(0x993C8, 0x8C0DC4, 8, "Selected Table")
+    ADDR_DDM = hook.Address(0x9939C, 0x8C0D98, 16, "Danger Divisor Multiplier")
+    ADDR_LURE = hook.Address(0x62CE1, 0x9BCAD9, 8, "Lure Rate")
+    ADDR_PREEMPT = hook.Address(0x62CE3, 0x9BCADB, 8, "Preempt Rate")
+    ADDR_LASTENC = hook.Address(0x7CF0C, 0x8C1654, 16, "Last Encounter Formation")
 
     def update_axes(self):
         dpg.set_axis_limits(self.x_axis, 0, self.width)

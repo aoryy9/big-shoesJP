@@ -8,11 +8,11 @@ import hook
 
 
 class FormationExtrapolatorWindow:
-    ADDR_FMACCUM = hook.Address(0x71C20, 0x8C1650, 8, "Formation Accumulator")
-    ADDR_FIELDID = hook.Address(0x9A05C, 0x8C15D0, 16, "Field ID")
-    ADDR_SELTABLE = hook.Address(0x9AC30, 0x8C0DC4, 8, "Selected Table")
-    ADDR_PREEMPT = hook.Address(0x62F1B, 0x9BCADB, 8, "Preempt Rate")
-    ADDR_LASTENC = hook.Address(0x7E774, 0x8C1654, 16, "Last Encounter Formation")
+    ADDR_FMACCUM = hook.Address(0x70BD8, 0x8C1650, 8, "Formation Accumulator")
+    ADDR_FIELDID = hook.Address(0x987F4, 0x8C15D0, 16, "Field ID")
+    ADDR_SELTABLE = hook.Address(0x993C8, 0x8C0DC4, 8, "Selected Table")
+    ADDR_PREEMPT = hook.Address(0x62CE3, 0x9BCADB, 8, "Preempt Rate")
+    ADDR_LASTENC = hook.Address(0x7CF0C, 0x8C1654, 16, "Last Encounter Formation")
 
     def main(self):
         while True:
