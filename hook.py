@@ -300,7 +300,7 @@ def find_base_address_candidates(b: bytes):
         if i < 0:
             return
         startadd = i - 0xDFD58
-        if (sum(b[i - 0xCFD58:i - 0xCFD58 + 128]) == 9241) and (startadd % 0x10000 == 0): #mod 0x10000 to get rid of savestates
+        if (sum(b[i - 0xCFD58:i - 0xCFD58 + 128]) == 9241): # and (startadd % 0x10000 == 0): gets rid of savestates, might be bad for bizhawk
             yield startadd
         i += len(constants.RNG_BYTES)
 
